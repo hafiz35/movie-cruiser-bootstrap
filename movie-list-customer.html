@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<title>Movie Cruiser</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="movie-list-customer.html" class="navbar-brand"><i class="material-icons">
+                local_movies
+            </i>Movie Cruiser</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcontent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcontent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="movie-list-customer.html" class="nav-link">Movies</a>
+                </li>
+                <li class="nav-item"><a href="favorites.html" class="nav-link">Favorites</a></li>
+                <li class="nav-item"><a href="menu-item-list-customer.html" class="nav-link"><i class="material-icons">
+                            person
+                        </i>John</a></li>
+                <li class="nav-item"><a href="movie-list.html" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron search-bar">
+        <label class="display-4 text-white" for="searchmovie">Find Movie</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </span>
+            </div>
+            <input type="text" class="form-control" name="search-bar" id="searchmovie" placeholder="Search Movie">
+        </div>
+    </div>
+
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mt-3">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL__QL50.jpg"
+                        alt="Avatar" />
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 class="card-title col-6">Avatar</h4>
+                            <label class="col-6 text-right text-maroon font-size-20">$ 2787965087</label>
+                        </div>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-6">Science Fiction</div>
+                                <div class="col-6 text-right">
+                                    <div class="badge badge-info ">Teaser</div>
+                                </div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <a href="movie-list-customer-add-to-favorites.html" class="btn bg-primary  text-white ">
+                                    <i class="material-icons">
+                                        favorite_border
+                                    </i>
+                                    <label id="addtocart">Add to Favorites</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL__QL50.jpg"
+                        alt="The Avengers" />
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 class="card-title col-6">The Avengers</h4>
+                            <label class="col-6 text-right text-maroon font-size-20">$ 1518812988</label>
+                        </div>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-6">Superhero</div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <a href="#" class="btn bg-primary  text-white ">
+                                    <i class="material-icons">
+                                        favorite_border
+                                    </i>
+                                    <label id="addtocart">Add to Favorites</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://m.media-amazon.com/images/M/MV5BMTA4MjIyZWEtZjYwMS00ZmQ1LWJiMDEtMWNiNTI5NWE3OGJjXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UY268_CR2,0,182,268_AL__QL50.jpg"
+                        alt="Titanic" />
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 class="card-title col-6">Titanic</h4>
+                            <label class="col-6 text-right text-maroon font-size-20">$ 2187463944</label>
+                        </div>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-6">Romance</div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <a href="#" class="btn bg-primary  text-white ">
+                                    <i class="material-icons">
+                                        favorite_border
+                                    </i>
+                                    <label id="addtocart">Add to Favorites</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-6 col-lg-3 mt-3">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://m.media-amazon.com/images/M/MV5BNzQ3OTY4NjAtNzM5OS00N2ZhLWJlOWUtYzYwZjNmOWRiMzcyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL__QL50.jpg"
+                        alt="Jurassic World" />
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 class="card-title col-6">Jurassic World</h4>
+                            <label class="col-6 text-right text-maroon font-size-20">$ 1671713208</label>
+                        </div>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-6">Science Fictoin</div>
+                                <div class="col-6 text-right">
+                                    <div class="badge badge-info ">Teaser</div>
+                                </div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <a href="#" class="btn bg-primary  text-white ">
+                                    <i class="material-icons">
+                                        favorite_border
+                                    </i>
+                                    <label id="addtocart">Add to Favorites</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL__QL50.jpg"
+                        alt="Avengers: End Game">
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 class="card-title col-6">Avengers: End Game</h4>
+                            <label class="col-6 text-right text-maroon font-size-20">$ 2750760348</label>
+                        </div>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-6">Superhero</div>
+                                <div class="col-6 text-right">
+                                    <div class="badge badge-info ">Teaser</div>
+                                </div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <a href="#" class="btn bg-primary  text-white ">
+                                    <i class="material-icons">
+                                        favorite_border
+                                    </i>
+                                    <label id="addtocart">Add to Favorites</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ml-auto mt-5">
+        <footer class="bg-primary"> Copyright 2019</footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>
